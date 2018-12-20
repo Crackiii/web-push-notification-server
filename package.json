@@ -4,7 +4,7 @@
   "description": "The companion for the web push codelab.",
   "private": true,
   "license": "Apache Version 2.0",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
