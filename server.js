@@ -169,7 +169,7 @@ app.use('/', express.static('static'));
 
 
 // Start the server
-const server = app.listen(process.env.PORT || '8080', () => {
+const server = app.listen(process.env.PORT, () => {
   console.log('App listening on port %s', server.address().port);
   console.log('Press Ctrl+C to quit.');
 });
