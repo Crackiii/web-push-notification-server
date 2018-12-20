@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Notification Generator | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,700,900|Roboto+Slab:300,400,700|Rajdhani:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/Bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWy8UtWIVanu09MYHFGa-3bbtKByx1tDU"></script>
+    <!-- Plugins Scripts -->
+    <script type="text/javascript" src="plugins/jquery.min.js"></script>
+    <link rel="stylesheet" href="components/components.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="big-well">
+      <div class="container">
+        <h1> <i class="fas fa-chess-queen"></i> Web Push Notifications</h1>
+      </div>
+    </div>
+
+    <div class="container cus-container">
+      <div class="default-tab-btns">
+         <div class="def-tab-btns-wrap">
+           <a href="#" class="def-tab-button wavers wavers-dark def-tab-btn-active"> <i class="far fa-bell"></i> Notify Users </a>
+           <a href="#" class="def-tab-button wavers wavers-dark"> <i class="fas fa-screwdriver"></i> Notification Settings </a>
+           <a href="#" class="def-tab-button wavers wavers-dark"> <i class="fas fa-chalkboard"></i> Notification Testing</a>
+           <span class="pointy-slider"></span>
+         </div>
+      </div>
+
+      <div class="default-tabs">
+        <div class="default-tabs-wrap">
+
+
+           <div class="def-tab-content">
+              <form action="" id="notify_users">
+              <div class="row">
+                <div class="col-8" id="send_customarily">
+
+                  <div class="def-select-wrap" id="country_select" tabindex="1">
+                      <div class="def-selected-head">
+                          <span class="csh-text">Country</span>
+                          <span class="csh-icon"> <i class="flaticon-063-next"></i> </span>
+                      </div>
+                      <div class="def-select-opts" >
+                        <li class="wavers wavers-dark">Country</li>
+                        <li class="wavers wavers-dark">Pakistan</li>
+                        <li class="wavers wavers-dark">USA</li>
+                        <li class="wavers wavers-dark">Germany</li>
+                        <li class="wavers wavers-dark">Poland</li>
+                        <li class="wavers wavers-dark">UK</li>
+                        <li class="wavers wavers-dark">Iran</li>
+                      </div>
+                      <span class="def-select-fill def-sel-fill-dark"></span>
+                  </div>
+
+                  <div class="def-select-wrap" tabindex="1" id="device_select">
+                      <div class="def-selected-head">
+                          <span class="csh-text">Device</span>
+                          <span class="csh-icon"> <i class="flaticon-063-next"></i> </span>
+                      </div>
+                      <div class="def-select-opts" id="">
+                        <li class="wavers wavers-dark">Device</li>
+                        <li class="wavers wavers-dark">Apple</li>
+                        <li class="wavers wavers-dark">Android</li>
+                        <li class="wavers wavers-dark">Windows Phones</li>
+                        <li class="wavers wavers-dark">Black Berry</li>
+                        <li class="wavers wavers-dark">Desktop</li>
+                      </div>
+                      <span class="def-select-fill def-sel-fill-dark"></span>
+                  </div>
+
+
+                </div>
+                <div class="selection-text">  </div>
+              </div>
+              <button type="submit" name="button" class="btn btn-info wavers wavers-light " id="notify-subs" > <i class="far fa-bell"></i> Notify all Subscribers </button>
+            </form> 
+            </div>
+
+           <div class="def-tab-content">
+             <form action="" id="update_push">
+
+              <div class="row">
+
+                <div class="col-sm-12 col-md-12 col-lg-12 not-gen-head">
+                  Notifications Generator
+                </div>
+
+
+                <div class="col-sm-12 col-md-12 col-lg-12 not-gen-current">
+                  <div class="current-notification">
+                    <a href="#" class="cn-link">
+                      <div class="row">
+                        <div class="col-3 cn-icon">
+                           <img src="assets/images/profile.jpg" alt="">
+                        </div>
+                        <div class="col-9 cn-text">
+                           <div class="cnt-title">
+                              I am the Title
+                           </div>
+                           <div class="cnt-desc">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                           </div>
+                           <div class="cnt-close">
+                              <span class="wavers wavers-dark"> <i class="fas fa-times"></i> </span>
+                           </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                         <div class="col-12 cn-image">
+                            <img src="assets/images/profile.jpg" alt="">
+                         </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 up-mess"></div>
+                
+                <div class="col-sm-12 col-md-6 col-lg-6 add-not-data">
+                      <div class="pin-img-sec">
+                          <div class="inp" id="push-img">
+                              <input type="text" name="push_image" value="" id="pin-inp0" class="inp-light" >
+                              <label for="pin-inp1"> Image URL </label>
+                              <span class="inp-fill"></span>
+                              <span class="inp-line"></span>
+                          </div>
+                        <div class="upd-not-img1">
+                              Notification Image
+                            <i class="far fa-image"></i>
+                          </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 add-not-data">
+                    <div class="inp">
+                      <input type="text" name="push_title" value="" class="inp-light" id="pin-inp1" >
+                      <label for="pin-inp1"> Title (Notification Title) </label>
+                      <span class="inp-fill"></span>
+                      <span class="inp-line"></span>
+                    </div>
+                    <div class="inp">
+                      <input type="text" name="push_link" value="" class="inp-light" id="pin-inp2">
+                      <label for="pin-inp2"> Link (Where to redirect when Notification is clicked) </label>
+                      <span class="inp-fill"></span>
+                      <span class="inp-line"></span>
+                    </div>
+                    <div class="inp tinp">
+                       <textarea name="push_desc" id="pin-inp3"></textarea>
+                       <label for="pin-inp3"> Body (Description of the Notification) </label>
+                       <span class="inp-fill"></span>
+                       <span class="inp-line"></span>
+                    </div>
+                    <div class="inp">
+                        <input type="text" name="push_icon" value="" class="inp-light" id="pin-inp4">
+                        <label for="pin-inp4"> Icon URL </label>
+                        <span class="inp-fill"></span>
+                        <span class="inp-line"></span>
+                    </div>
+                    <div class="submit-form">
+                       <button type="submit" name="button" class="btn btn-info wavers wavers-light"> Update Now <i class="fas fa-chevron-circle-right"></i> </button>
+                    </div>
+               </div>
+              </div><!--Row ENd-->
+
+            </form>
+            
+           </div>
+            
+           
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="components/components.js"></script>
+  <script type="text/javascript" src="scripts/push.js"></script>
+  
+
+
+</html>

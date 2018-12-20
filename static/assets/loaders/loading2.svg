@@ -1,0 +1,50 @@
+<svg class="lds-gooeyring" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="background: none;"><defs>
+     <filter id="gooey" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
+       <feGaussianBlur in="SourceGraphic" stdDeviation="2.4000000000000004"></feGaussianBlur>
+<feComponentTransfer result="cutoff">
+  <feFuncA type="linear" slope="10" intercept="-5"></feFuncA>
+</feComponentTransfer>
+     </filter>
+   </defs><g filter="url(#gooey)"><g transform="translate(50 50)">
+<g transform="rotate(315)">
+  <circle cx="17" cy="0" r="4.8" fill="#c5523f">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="4s" repeatCount="indefinite" begin="-4s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="4s" repeatCount="indefinite" begin="0s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g transform="rotate(30)">
+  <circle cx="17" cy="0" r="7.6" fill="#f2b736">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="2s" repeatCount="indefinite" begin="-3.3333333333333335s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="2s" repeatCount="indefinite" begin="-0.6666666666666666s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g transform="rotate(225)">
+  <circle cx="17" cy="0" r="7.2" fill="#499255">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1.3333333333333333s" repeatCount="indefinite" begin="-2.6666666666666665s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.3333333333333333s" repeatCount="indefinite" begin="-1.3333333333333333s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g transform="rotate(180)">
+  <circle cx="17" cy="0" r="8.4" fill="#1875e5">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1s" repeatCount="indefinite" begin="-2s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1s" repeatCount="indefinite" begin="-2s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g transform="rotate(255)">
+  <circle cx="17" cy="0" r="4" fill="#c5523f">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="0.8s" repeatCount="indefinite" begin="-1.3333333333333333s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="0.8s" repeatCount="indefinite" begin="-2.6666666666666665s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g transform="rotate(89.9999)">
+  <circle cx="17" cy="0" r="6" fill="#f2b736">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="0.6666666666666666s" repeatCount="indefinite" begin="-0.6666666666666666s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="0.6666666666666666s" repeatCount="indefinite" begin="-3.3333333333333335s"></animateTransform>
+</g>
+</g></g></svg>
