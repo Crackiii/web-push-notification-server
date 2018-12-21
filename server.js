@@ -4,21 +4,21 @@ const express              =    require('express');
 const bodyParser           =    require('body-parser');
 const webpush              =    require('web-push');
 const mysql                =    require("mysql");
-const ms_connect           =    mysql.createConnection({
-                                    host:'localhost',
-                                    user:'root',
-                                    password:'',
-                                    database:'webpush_db'
-                                });
+// const ms_connect           =    mysql.createConnection({
+//                                     host:'localhost',
+//                                     user:'root',
+//                                     password:'',
+//                                     database:'webpush_db'
+//                                 });
 
 const app                 =     express();
-
+var ms_connect;
 
 // Parse JSON body
 app.use(bodyParser.json());
 
-ms_connect.connect(function(err){//On Connection with Database
-    if(err) throw err; // If any error in database connection
+// ms_connect.connect(function(err){//On Connection with Database
+//     if(err) throw err; // If any error in database connection
 
 
     app.post('/api/save-end-point',function(req,res){
@@ -157,13 +157,13 @@ ms_connect.connect(function(err){//On Connection with Database
       }
 
 
-    })
+//     })
 
 
 
 
 
-})    
+// })    
 
 app.use('/', express.static('static'));
 
